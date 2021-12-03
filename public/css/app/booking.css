@@ -1,0 +1,161 @@
+.booking-page__seat {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center; }
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 85vw;
+  overflow: auto; }
+
+.booking-screen {
+  width: 100%; }
+
+.seat-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap; }
+
+.seat-item {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 3px; }
+
+/* Customize the label (the container) */
+.seat {
+  display: inline-block;
+  position: relative;
+  height: 27px;
+  width: 27px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid #252525;
+  border-radius: 10%;
+  transition: 0.1s all; }
+
+/* Hide the browser's default checkbox */
+.seat input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10%; }
+
+.--seat-vip {
+  background-color: red; }
+
+.check-disabled {
+  background-color: grey !important; }
+
+.seat-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* On mouse-over, add a grey background color */
+.seat:hover {
+  transform: scale(1.1); }
+
+.seat-disabled:hover {
+  transform: scale(1); }
+
+/* When the checkbox is checked, add a blue background */
+.seat input:checked ~ .checkmark {
+  background-color: green; }
+
+.booking-page__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+  background-color: #032055; }
+  .booking-page__form .showtime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 300; }
+    .booking-page__form .showtime__date {
+      margin: 10px;
+      font-size: 16px;
+      text-transform: uppercase; }
+      @media (min-width: 576px) {
+        .booking-page__form .showtime__date {
+          font-size: 21px; } }
+    .booking-page__form .showtime__box {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      box-shadow: 0px 10px 15px 0px rgba(59, 55, 188, 0.5);
+      background: linear-gradient(270deg, #1BCBB7 0%, #32ABFF 50%, #A772FF 100%); }
+      @media (min-width: 576px) {
+        .booking-page__form .showtime__box {
+          font-size: 24px; } }
+
+.booking-page__banner {
+  height: 30vh;
+  width: 100%;
+  position: relative; }
+  .booking-page__banner .film-info {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .booking-page__banner .film-info__name {
+      font-size: 24px;
+      font-weight: bold; }
+      @media (min-width: 576px) {
+        .booking-page__banner .film-info__name {
+          font-size: 28px; } }
+    .booking-page__banner .film-info__detail {
+      font-size: 18px;
+      font-weight: 300; }
+      @media (min-width: 576px) {
+        .booking-page__banner .film-info__detail {
+          font-size: 24px; } }
+  .booking-page__banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%; }
+
+.booking-page {
+  background-color: #000C20;
+  color: white; }
+
+.booking-page__checkout {
+  text-align: center;
+  margin-top: 30px; }
+  .booking-page__checkout a {
+    padding: 5px 20px;
+    font-size: 14px; }
+    @media (min-width: 576px) {
+      .booking-page__checkout a {
+        padding: 10px 30px;
+        font-size: 18px; } }

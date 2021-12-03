@@ -1,0 +1,3 @@
+<?php
+    $RouteUrl->routeDir();
+?>

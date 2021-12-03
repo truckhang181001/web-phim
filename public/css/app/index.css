@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+}
+body{
+    background-color: #000C20 !important;
+}
+.btnf {
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: linear-gradient(270deg, #1BCBB7 0%, #32ABFF 50%, #A772FF 100%);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.2s;
+}
+a{
+    text-decoration: none;
+}
+.btnf:hover {
+    filter: hue-rotate(45deg);
+    transform: scale(1.05,1);
+    color: white;
+}
+.btnf:active {
+    transform: translateY(3px);
+}

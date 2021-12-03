@@ -1,0 +1,62 @@
+.container-fluid {
+    background-color: white; }
+  
+  .container-right .main-title {
+    padding: 40px 0; }
+  
+  .container-right .search-and-button-gr .button-gr {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px; }
+    .container-right .search-and-button-gr .button-gr button {
+      font-weight: 500;
+      font-size: 12px; }
+      @media (min-width: 768px) {
+        .container-right .search-and-button-gr .button-gr button {
+          padding: 6px;
+          font-size: 14px; } }
+      @media (min-width: 992px) {
+        .container-right .search-and-button-gr .button-gr button {
+          font-size: 16px;
+          padding: 6px 12px; } }
+  
+  .container-right .search-and-button-gr .input-group {
+    margin-bottom: 20px; }
+    .container-right .search-and-button-gr .input-group .input-group-text i {
+      cursor: pointer; }
+  
+  .container-right .table-sticky {
+    overflow: scroll; }
+    .container-right .table-sticky .table {
+      width: 100%;
+      font-size: 14px; }
+      @media (min-width: 992px) {
+        .container-right .table-sticky .table {
+          font-size: 16px; } }
+      .container-right .table-sticky .table .namefilm {
+        min-width: 100px; }
+      .container-right .table-sticky .table .discript {
+        min-width: 250px;
+        max-width: 400px; }
+        .container-right .table-sticky .table .discript p {
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          display: -webkit-box;
+          -webkit-box-orient: vertical; }
+          @media (min-width: 768px) {
+            .container-right .table-sticky .table .discript p {
+              -webkit-line-clamp: 3; } }
+      .container-right .table-sticky .table .caterogy {
+        min-width: 100px; }
+      .container-right .table-sticky .table thead tr th {
+        white-space: nowrap; }
+      .container-right .table-sticky .table thead tr th:nth-child(2), .container-right .table-sticky .table tbody tr td:nth-child(2) {
+        padding-left: 0;
+        position: sticky;
+        left: 0; }
+        .container-right .table-sticky .table thead tr th:nth-child(2) p, .container-right .table-sticky .table tbody tr td:nth-child(2) p {
+          padding-right: 5px;
+          background-color: white;
+          margin: 0; }

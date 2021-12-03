@@ -1,0 +1,22 @@
+.nav-ad{
+    top: 0;
+    position: sticky;
+    height: 100vh;
+    background-color: #002947;
+}
+.nav-ad__logo{
+    margin: 50px 0px;
+    text-align: center;
+}
+.nav-ad__item{
+    padding: 20px 0px;
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.nav-ad__item--select{
+    background-color: white;
+    color: #002947;
+    font-weight: bold;
+}
